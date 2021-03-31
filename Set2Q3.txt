@@ -1,0 +1,27 @@
+1.CREATE TABLE exam (
+    roll_no int,
+    student_name varchar(255),
+    class int,
+    gender char(1),
+    total_marks int
+  );
+
+2.INSERT INTO exam
+  VALUES
+	(1,'Naditha',11,'F',450),
+	(2,'Karma',12,'F',375),
+	(3,'Jiyal',11,'M',490),
+	(4,'Sachin',12,'M',479),
+	(5,'Babitha',12,'F',355);
+
+3.select student_name,class,total_marks from exam where student_name = 'Sachin';
+
+4.select count(student_name),sum(total_marks) from exam group by class;
+
+5.select roll_no,student_name,total_marks from exam where total_marks between 460 and 480;
+
+6. 11
+   12
+
+7. 7
+
