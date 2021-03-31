@@ -20,6 +20,7 @@ plt.ylabel("Runs")
 # adding name to the bar graph
 plt.title("Cricket Scores")
 
+
 # display bar graph
 plt.show()
 
