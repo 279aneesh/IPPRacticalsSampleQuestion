@@ -1,0 +1,22 @@
+
+CREATE TABLE EMP (
+    e_no int,
+    e_name varchar(10),
+    dept_name varchar(10),
+    age int,
+    salary int,
+    doj date
+);
+
+
+INSERT INTO EMP
+VALUES
+	(401,'Anu','IT',34,9000,'2016-01-23'),
+	(402,'Shane','Sales',29,8000,'2012-06-01'),
+	(403,'Rohan','Sales',34,6000,'2015-10-15'),
+	(404,'Scott','IT',34,9000,'2012-01-23'),
+	(405,'Tiger','Admin',35,8000,'2012-12-12');
+
+select e_name,age from EMP group by salary having age>25
+
+select sum(salary) from EMP
